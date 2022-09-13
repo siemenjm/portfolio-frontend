@@ -1,0 +1,12 @@
+.about-me {
+    display: flex;
+}
+
+.content {
+    padding-right: 5%;
+}
+
+img {
+    padding-left: 5%;
+    width: 45%;
+}
