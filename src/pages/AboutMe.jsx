@@ -1,6 +1,8 @@
+import '../styles/AboutMe.css';
+import headShot from './images/Headshot.jpeg';
 import { useState, useEffect } from "react";
 
-function About(props) {
+function AboutMe(props) {
     const [about, setAbout] = useState(null);
 
     async function getAboutData() {
@@ -15,10 +17,12 @@ function About(props) {
 
     function loaded() {
         return (
-            <div>
-                <h2>{about.name}</h2>
-                <h3>{about.email}</h3>
-                <p>{about.bio}</p>
+            <div className="about-me">
+                <div className="content">
+                    <p>{about.bio}</p>
+                    <button className='nav-link accent-link'>{about.email}</button>
+                </div>
+                <img src={headShot} alt="Jared Siemen headshot" />
             </div>
         );
     }
@@ -26,4 +30,4 @@ function About(props) {
     return about ? loaded() : <h1>Loading...</h1>;
   }
   
-export default About;
+export default AboutMe;

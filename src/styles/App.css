@@ -1,0 +1,70 @@
+.App {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    width: 1440px;
+}
+
+.App > * {
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.site-logo {
+    width: 300px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-accent);
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.accent-link {
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    border-radius: 10px;
+}
+
+.accent-link:hover {
+    color: var(--color-primary);
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid white;
+}
+
+.inline-link {
+    text-decoration: none;
+    color: var(--color-accent);
+}
