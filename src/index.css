@@ -2,6 +2,12 @@
 
 :root {
     font-size: 16px;
+
+    --side-padding: 140px;
+
+    --color-primary: #122d42;
+    --color-secondary: #1d486a;
+    --color-accent: #3dd2cc;
 }
 
 * {
@@ -29,4 +35,9 @@ h3 {
 
 h4 {
     font-size: 1.25rem;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
 }

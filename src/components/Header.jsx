@@ -1,18 +1,24 @@
+import siteLogo from './images/site_logo.png';
 import { Link } from "react-router-dom";
 
 function Header(props) {
     return (
         <header>
-            <h1>My Portfolio Page</h1>
+            <Link to='/'>
+                <img src={siteLogo} alt="" className="site-logo" />
+            </Link>
             <nav>
                 <Link to='/'>
-                    <div>HOME</div>
+                    <button className='nav-link'>Home</button>
                 </Link>
-                <Link to='/about'>
-                    <div>ABOUT</div>
+                <Link to='/about-me'>
+                    <button className='nav-link'>About me</button>
                 </Link>
                 <Link to='/projects'>
-                    <div>PROJECTS</div>
+                    <button className='nav-link'>Projects</button>
+                </Link>
+                <Link to='/contact'>
+                    <button className='nav-link accent-link'>Contact</button>
                 </Link>
             </nav>
         </header>
