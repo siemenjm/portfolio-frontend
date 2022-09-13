@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Route, Switch } from 'react-router';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const URL = 'https://practice-portfolio713.herokuapp.com/';
+
+    return (
+        <div className="App">
+            <Header />
+            <Routes>
+                <Route exact path='/' element={ <Home /> }></Route>
+                <Route path='/projects' element={ <Projects URL={URL}/> }></Route>
+                <Route path='/about' element={ <About URL={URL}/> }></Route>
+            </Routes>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
