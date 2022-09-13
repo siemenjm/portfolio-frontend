@@ -1,0 +1,24 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.huge {
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20rem;
+    line-height: 15rem;
+    margin-bottom: -10rem;
+}
+
+.name, .desc {
+    color: white;
+}
+
+.desc {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}

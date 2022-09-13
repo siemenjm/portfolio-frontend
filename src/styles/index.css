@@ -18,7 +18,9 @@
 }
 
 body {
+    background-color: var(--color-primary);
     min-height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
