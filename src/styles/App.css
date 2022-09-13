@@ -54,3 +54,16 @@ nav {
     color: var(--color-primary);
     background-color: white;
 }
+
+footer {
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid white;
+}
+
+.inline-link {
+    text-decoration: none;
+    color: var(--color-accent);
+}
