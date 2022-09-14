@@ -18,11 +18,13 @@ function AboutMe(props) {
     function loaded() {
         return (
             <div className="about-me">
-                <div className="content">
+                <div className="about-content">
                     <p>{about.bio}</p>
-                    <button className='nav-link accent-link'>{about.email}</button>
+                    <a href="mailto:contact@jaredsiemen.com" className='nav-link accent-link'>{about.email}</a>
                 </div>
-                <img src={headShot} alt="Jared Siemen headshot" />
+                <div className="about-image">
+                    <img src={headShot} alt="Jared Siemen headshot" />
+                </div>
             </div>
         );
     }
