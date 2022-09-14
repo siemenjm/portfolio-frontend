@@ -1,0 +1,36 @@
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project-list > h1 {
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project > * {
+    margin-bottom: 20px;
+}
+
+.project-links {
+    display: flex;
+    gap: 100px;
+}
+
+.project > img {
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px black;
+}

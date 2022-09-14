@@ -1,3 +1,4 @@
+import '../styles/Projects.css';
 import { useState, useEffect } from "react";
 
 function Projects(props) {
@@ -16,15 +17,13 @@ function Projects(props) {
     function loaded() {
         const allProjects = projects.map((project) => {
             return (
-                <div>
-                    <h1>{project.name}</h1>
+                <div className="project">
+                    <h2>{project.name}</h2>
+                    <div className="project-links">
+                        <a href={project.git} target="_blank" rel='noreferrer' className="nav-link accent-link">Github</a>
+                        <a href={project.live} target="_blank" rel='noreferrer' className="nav-link accent-link">Live Site</a>
+                    </div>
                     <img src={project.image} alt={project.name} />
-                    <a href={project.git}>
-                        <button>Github</button>
-                    </a>
-                    <a href={project.live}>
-                        <button>Live Site</button>
-                    </a>
                 </div>
             );
         });
@@ -32,7 +31,7 @@ function Projects(props) {
         return allProjects;
     }
 
-    return projects ? loaded() : <h1>Projects</h1>;
+    return projects ? <div className="project-list"><h1>Projects</h1>{loaded()}</div> : <h1>Projects</h1>;
   }
   
 export default Projects;
