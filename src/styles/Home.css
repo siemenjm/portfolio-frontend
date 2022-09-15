@@ -10,13 +10,16 @@
     font-weight: bold;
     font-style: italic;
     font-size: 20rem;
-    line-height: 15rem;
-    margin-top: -5rem;
+    /* line-height: 15rem; */
+    /* margin-top: -5rem; */
+    z-index: -1;
+    position: absolute;
 }
 
 .home > div {
     text-align: center;
-    margin-top: -10rem;
+    z-index: 10;
+    /* margin-top: -10rem; */
 }
 
 .name, .desc {
